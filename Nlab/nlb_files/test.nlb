@@ -1,0 +1,37 @@
+BEGIN {
+   READ "ltoad.arr" $A
+   PRINT $A
+   ONES 6 6 $B
+   PRINT "B:"
+   PRINT $B
+   SET $A := $A U-EIGHTCOUNT ;
+   PRINT "A:"
+   PRINT $A
+   SET $B := $A $B B-GREATER ;
+   PRINT "B:"
+   PRINT $B
+   SET $C := $B U-NOT ;
+   PRINT "C:"
+   PRINT $C
+   PRINT "B:"
+   PRINT $B
+   SET $D := $C $B B-ADD ;
+   PRINT "D:"
+   PRINT $D
+   SET $E := $D ;
+   LOOP $I 5 {
+      SET $E := $E 2 B-ADD ;
+   }
+   PRINT "E:"
+   PRINT $E
+   SET $F := $B 1 B-AND ;
+   PRINT "F:"
+   PRINT $F
+   LOOP $Y 5 {
+      LOOP $X 5 {
+         SET $A := $A $X B-ADD ; 
+      }
+   }
+   PRINT "A:"
+   PRINT $A
+}
