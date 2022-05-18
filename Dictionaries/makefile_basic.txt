@@ -1,0 +1,13 @@
+CFLAGS := -Wall -Wextra -Wpedantic -Wfloat-equal -Wvla -std=c99 -Werror -O2
+
+# You need to provide Exact/exact.c and Exact/specific.h
+# All other files are mine including the general.c/.h files which
+# are copied from ADTS/General
+
+all: testexact spellexact
+
+testexact: Exact/exact.c testdict.c general.c
+	clang testdict.c Exact/exact.c general.c $(CFLAGS) -o testexact -lm
+
+spellexact: Exact/exact.c spelling.c general.c
+	clang spelling.c Exact/exact.c general.c $(CFLAGS) -o spellexact -lm
