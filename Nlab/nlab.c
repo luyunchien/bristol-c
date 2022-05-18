@@ -79,7 +79,7 @@ int main(int argc, const char * argv[]) {
         file2wds(program, argv[1]);
         Prog(program, line_stack, all_stack);
     }else{
-        printf("Please command with input file's name.\n");
+        perror("Please command with input file's name.\n");
     }
 #ifdef INTERP
         free(line_stack->list);
