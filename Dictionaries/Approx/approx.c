@@ -1,10 +1,3 @@
-//
-//  approx.c
-//  assignment11
-//
-//  Created by mac on 06/12/2021.
-//
-
 #include "specific.h"
 
 dict* dict_init(unsigned int maxwords)
