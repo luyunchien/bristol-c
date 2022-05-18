@@ -1,10 +1,3 @@
-//
-//  main.c
-//  SpellingChecker7.1
-//
-//  Created by mac on 10/11/2021.
-//
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
