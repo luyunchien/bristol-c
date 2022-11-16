@@ -80,6 +80,7 @@ int main(int argc, const char * argv[]) {
         Prog(program, line_stack, all_stack);
     }else{
         perror("Please command with input file's name.\n");
+        exit(EXIT_FAILURE);
     }
 #ifdef INTERP
         free(line_stack->list);
