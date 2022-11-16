@@ -13,7 +13,7 @@ Output:
 You can create an array full of ones and add 2 to each cell of the array:
 BEGIN {
    ONES 6 5 $A
-   SET $A := $A 2 B - ADD ;
+   SET $A := $A 2 B-ADD ;
    PRINT " ARRAY :"
    PRINT $A
 }
@@ -34,7 +34,7 @@ factorials in the variable F. Both variables are scalars (a 1×1 array) :
 BEGIN {
    SET $F := 1 ;
    LOOP $I 10 {
-   SET $F := $F $I B - TIMES ;
+   SET $F := $F $I B-TIMES ;
    PRINT $F
    } 
 }
