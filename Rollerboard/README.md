@@ -1,6 +1,6 @@
 # Rollerboard
 
-The puzzle Roller-Board consists of a 2D rectangualr grid of cells, each of which is labelled
+The puzzle Roller-Board consists of a 2D rectangular grid of cells, each of which is labelled
 either ‘0’ or ‘1’:<br />
 
 ![image](https://user-images.githubusercontent.com/98363908/168406277-7e7fd56a-59aa-458e-9596-eb5931fa2770.png)
